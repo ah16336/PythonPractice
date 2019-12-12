@@ -17,7 +17,7 @@ class FizzBuzz():
     def find_all(self):
         for i in range(self.number + 1):
             ob = FizzBuzz(i)
-            print(ob.find_one())
+            ob.find_one()
 
 # creating objects
 first = FizzBuzz(30)
