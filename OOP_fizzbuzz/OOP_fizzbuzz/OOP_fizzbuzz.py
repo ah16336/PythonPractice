@@ -14,22 +14,16 @@ class FizzBuzz():
         else:
             print(self.high)
 
-    # finding fizzbuzz within a given interval
-    def find_some(self):
-        for i in range(self.low, self.high+1):
-            ob = FizzBuzz(0, i)
-            ob.find_one()
-
-    # finding fizzbuzz for values smaller than or equal to given value
+    # finding fizzbuzz for values that fall in defined interval
     def find_all(self):
-        for i in range(self.high + 1):
+        for i in range(self.low, self.high + 1):
             ob = FizzBuzz(0, i)
             ob.find_one()
 
 # creating objects
 first = FizzBuzz(10, 30)
 second = FizzBuzz(20, 55)
-third = FizzBuzz(30, 42)
+third = FizzBuzz(0, 42)
 
 # testing first method
 first.find_one()
@@ -39,9 +33,8 @@ third.find_one()
 print("\n")
 
 # testing second method
-third.find_some()
+third.find_all()
 
 print("\n")
 
-# testing third method
 second.find_all()
