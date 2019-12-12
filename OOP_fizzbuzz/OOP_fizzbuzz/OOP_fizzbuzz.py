@@ -2,14 +2,22 @@ class FizzBuzz():
     def __init__(self, low, high):
         self.low=low
         self.high=high
-    
+
+    def divisible_by(self, num, divisibleby):
+        if num % divisibleby == 0:
+            return True
+        else:
+            return False
+
     # finding fizzbuzz for a given value
     def find_one(self):
-        if self.high % 5 == 0 and self.high % 3 == 0:
+        five = self.divisible_by(self.high, 5)
+        three = self.divisible_by(self.high, 3)
+        if five and three:
             print("FizzBuzz")
-        elif self.high % 5 == 0:
+        elif five:
             print("Buzz")
-        elif self.high % 3 == 0:
+        elif three:
             print("Fizz")
         else:
             print(self.high)
