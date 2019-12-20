@@ -24,10 +24,10 @@ class EulerFizzBuzz():
         return s
 
 validation = EulerFizzBuzz(10)
-#print(validation.sum()) # should equal 23
+print(validation.sum()) # should equal 23
 
 answer = EulerFizzBuzz(1000)
-#print(answer.sum())
+print(answer.sum())
 
 
 # Problem 4
@@ -112,6 +112,6 @@ class LargestProduct():
         return [position_zero, max]
 
 validation_lp = LargestProduct() # test with i + 4 in the method defintion
-print(validation_lp.find()) #  should return 5832 when using 4 spaces
+#print(validation_lp.find()) #  should return 5832 when using 4 spaces
 # answer returns [197, 23514624000] when using 13 spaces.
 
