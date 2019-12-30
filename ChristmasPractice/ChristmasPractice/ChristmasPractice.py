@@ -144,12 +144,6 @@ print('''\n[1] => Setosa
 [0]=> Not Setosa\n''')
 print("Prediction. Flower with petal length 3 and petal width 2 is predicted to be:", svm_prediction_1)
 print("Prediction. Flower with petal length 2 and petal width 0.6 is predicted to be:", svm_prediction_2)
-scatter_labels = [svm_prediction_1, svm_prediction_2]
-scatter_labels_list = []
-for i in range(len(scatter_labels)):
-    scatter_labels_list.append(scatter_labels[i][0].astype(float))
-
-scatter_labels_list = np.asarray(scatter_labels_list)/255.0
 
 w = svm_classifier.coef_[0]
 m = -w[0]/w[1]
