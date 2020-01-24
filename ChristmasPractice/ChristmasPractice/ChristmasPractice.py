@@ -116,10 +116,6 @@ print("Prediction. Flower Stats:", flower_stats, "Predicted Species:", species_p
 ## SUPPORT VECTOR MACHINE ##
 print("\n -- SUPPORT VECTOR MACHINE -- \n")
 
-#sns.scatterplot(x='petal_length', y='petal_width', data=iris_df, hue='species')
-#plt.title("Petal width and petal length of plants, grouped by species")
-#plt.show()
-
 svm_df = copy(iris_df)
 svm_df = pd.DataFrame(svm_df, columns=iris_df.columns)
 
